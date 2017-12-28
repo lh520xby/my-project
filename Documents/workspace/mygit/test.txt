@@ -16,3 +16,22 @@ The key's randomart image is:
 +----[SHA256]-----+
 
 cat /Users/lihong/.ssh/id_rsa.pub查看SSH key
+
+
+
+touch README.md 创建空文件
+git add READER.md git上添加文件，使其变成已跟踪状态，未跟踪状态的文件是无法提交的
+git commit -m "add README" 提交
+git push -u origin master 执行完这一句才是真正的提交到git上/建立新的分支
+
+git remote add origin https://github.com/lh520xby/my-project.git
+
+
+git commit -m 和 git commit -am的区别在哪里
+在于a.txt文件修改之后的处理，向a.txt添加内容'a'
+文件a.txt处于已跟踪，但未暂存状态。这时，如果使用git commit -m是无法提交最新版本的a.txt的，提交的只是最开始空内容的旧版本a.txt
+要提交新版本a.txt，即内容为'a'的a.txt，则需要使用git add a.txt，将新版本的a.txt放到staged暂存区，然后才能使用git commit -m进行提交
+而如果使用git commit -am，则可以省略git add a.txt这一步，因为git commit -am可以提交跟踪过的文件，而a.txt一开始已经被跟踪过了
+
+
+注：正在提交到git上都必须使用命令git push origin 分支名
