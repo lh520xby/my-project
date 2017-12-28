@@ -1,0 +1,18 @@
+GitLab创建
+github账号添加SSH key
+he key fingerprint is:
+SHA256:tii22rrmZxWc1+SEhj440p5Qe1Ur735gHC9FLb98p5g “李红”
+The key's randomart image is:
++---[RSA 2048]----+
+|       . o.  .   |
+|    . . + o.o .  |
+|   o = +.=.. o   |
+|  o = B .o+ . .  |
+|   + + +S..+ . . |
+|    o .o o= . o o|
+|    o.. ...o o o.|
+|  .ooo   .  E .  |
+| o=*o     ..     |
++----[SHA256]-----+
+
+cat /Users/lihong/.ssh/id_rsa.pub查看SSH key
